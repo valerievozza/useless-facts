@@ -1,0 +1,99 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html {
+    font-size: 62.5%;
+}
+
+a {
+    letter-spacing: 2px;
+    color: #AA58A1;
+    
+}
+
+i {
+    display: block;
+    margin: 20px auto;
+    font-size: 4.5rem;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Tahoma, Sans-Serif;
+    letter-spacing: 1px;
+    color: lightgray;
+    background: #27272C;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 85%;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    color: #AB79D6;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 3rem;
+    padding: 2rem;
+    background: #05B1C2;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+/*    box-shadow: 0 3px 5px gray;*/
+}
+
+button:active {
+    padding: 1.75rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+div {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    width: 50%;
+    height: .25rem;
+    background: linear-gradient(45deg, #AA58A1, orange, yellow, green, #05B1C2, #AB79D6);
+}
+
+@media all and (max-width: 400px) {
+    div {
+        width: 80%;
+    }
+}
